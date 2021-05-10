@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -14,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color:whitesmoke;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +37,96 @@
     transform: rotate(360deg);
   }
 }
+
+
+.float-switch-button {
+  position: fixed;
+  transition: all 0.2s ease-in 0s;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+}
+
+.my-button {
+  display: inline-block;
+  padding: 0.4em 0.4em;
+  transition: all .3s;
+  overflow: hidden;
+  background-color:rgb(255, 166, 0);
+  border-radius: 1em;
+  margin: 0.5em 0.5em;
+  font-size: 1em;
+}
+.my-button:hover {
+  transition: all .8s;
+  background-color:rgb(218, 141, 0);
+}
+
+.food-button {
+  font-size: 0.7em;
+  padding: 0.3em 0.3em;
+}
+
+.input-field {
+  border: black;
+  padding: 1em;
+  margin: 0.3em;
+  outline:solid 2px black;
+  background-color: white;
+}
+
+.input-field:focus {
+  background-color: white;
+}
+
+
+
+/*GRID*/
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.top-grid {
+  top: 25px;
+}
+
+
+.half-width {
+  width: 50%;
+  object-fit: cover;
+}
+
+
+.primary-color {
+  color: orange;
+}
+
+.text-colorset {
+  color:black;
+}
+
+/*
+Food items
+*/
+
+.food-container {
+  margin-top: 1em;;
+  color:black;
+}
+
+.food-item {
+  margin: 0.1em;
+}
+
+
+/*
+IDS
+*/
+
+#main-title {
+  color:black;
+  margin: 2px;
+}
+
