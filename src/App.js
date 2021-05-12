@@ -42,14 +42,14 @@ function App() {
             </div>
 
             <div>
-              { foodList.length < 1 &&
+              { foodList.length <= 0 &&
                 <h4 className="text-colorset"> Please enter a food! </h4>
               }
               {isSingleView && foodList.length > 0 &&  (
                 <div className="food-item">
                   <Food
                     name={foodList[currIndex]}
-                    index={currIndex}
+                    currIndex={currIndex}
                     foodList={foodList}
                     setFoodList={setFoodList}
                     likeCount={likeCount}
@@ -63,9 +63,9 @@ function App() {
               }
               {!isSingleView && foodList.length > 0 && 
                 foodList.map((value, index) => {
-                  return  <div className="food-item"> <Food
+                  return  <div key={value} className="food-item"> <Food
                     name={value}
-                    index={index}
+                    currIndex={index}
                     foodList={foodList}
                     setFoodList={setFoodList}
                     likeCount={likeCount}
